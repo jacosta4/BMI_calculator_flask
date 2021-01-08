@@ -1,0 +1,12 @@
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+
+.enter_data {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 40%;
+}

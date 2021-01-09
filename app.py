@@ -5,12 +5,15 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def home():
     bmi = ''
-    if request.method == 'POST' and 'weight' in request.form:
-        weight = float(request.form.get("weight"))
-        height = float(request.form.get('height'))
-        bmi = bmi_calc(weight, height)
-    return render_template('index.html',
-                            bmi = bmi)
+    try:
+        if request.method == 'POST' and 'weight' in request.form:
+            weight = float(request.form.get("weight"))
+            height = float(request.form.get('height'))
+            bmi = bmi_calc(weight, height)
+        return render_template('index.html',
+                                bmi = bmi)
+    except ValueError:
+        return render_template('index.html')
 
 
 def bmi_calc(weight, height):

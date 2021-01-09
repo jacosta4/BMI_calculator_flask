@@ -1,6 +1,6 @@
 h1 {
     border: 2px #eee solid;
-    color: brown;
+    color: #0D1DA8;
     text-align: center;
     padding: 10px;
 }
@@ -9,4 +9,24 @@ h1 {
     padding-left: 1px;
     padding-right: 1px;
     margin-left: 40%;
+}
+
+.bmi_result {
+    border: 2px #eee solid;
+    padding: 10px;
+    text-align: center;
+}
+
+#response {
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #1D63DE;
+    margin: 50px 500px 25px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid #3D1DDE;
 }

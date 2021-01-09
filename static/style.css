@@ -1,5 +1,10 @@
+body {
+    background-color: #eee;
+}
+
 h1 {
-    border: 2px #eee solid;
+    font-family: Century Gothic;
+    border: 2px #F7DEF7 solid;
     color: #0D1DA8;
     text-align: center;
     padding: 10px;
